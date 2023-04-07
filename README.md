@@ -21,3 +21,6 @@ To run this project, you need to have the following software installed on your m
 - Navigate to the 'client' repo.
 - Install the project using 'npm install'
 - Run the project using 'npm start'
+
+Demo usernames for login:
+'Alice', 'Bob', 'Charlie'

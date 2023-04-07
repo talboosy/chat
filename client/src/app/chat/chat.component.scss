@@ -1,0 +1,33 @@
+.chat-input {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.initial-avatar {
+  /* Center the content */
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  /* Colors */
+  background-color: #d1d5db;
+  color: #fff;
+
+  /* Rounded border */
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+}
+
+.user-name-title {
+  font-weight: bold;
+}
+
+.user-avatar {
+  width: 45px;
+  height: 45px !important;
+  border-radius: 100%;
+  object-fit: cover;
+}

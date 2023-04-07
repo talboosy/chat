@@ -1,0 +1,36 @@
+<form>
+  <div class="p-2" id="messages">
+    <span *ngFor="let message of messages">
+      <div class="card-body">
+        <div class="d-flex flex-row justify-content-start mb-4">
+          <img src="{{message['img']}}" class="user-avatar" alt="Avatar" />
+          <div class="p-3 ms-3" style="border-radius: 15px; background-color: rgba(57, 192, 237,.2);">
+            <div class="row">
+              <div class="col user-name-title">
+                {{ message['user']}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p class="small mb-0">{{ message['msg'] }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </span>
+  </div>
+
+  <div class="chat-input">
+    <div class="row p-2">
+      <div class="col-11">
+        <input type="text" name="message" class="form-control" id="message" autocomplete="off" [(ngModel)]="message" />
+      </div>
+      <div class="col-1 text-center">
+        <button class="btn btn-primary" type="submit" (click)="sendMessage()">Send</button>
+      </div>
+    </div>
+
+  </div>
+</form>
+

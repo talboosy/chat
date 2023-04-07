@@ -1,0 +1,20 @@
+<div *ngIf="!userName" class="sign-in">
+  <app-sign-in (userSignedIn)="onChangedUser($event)"></app-sign-in>
+</div>
+<div *ngIf="userName" class="chat">
+  <div class="p-2 pb-4">
+    <div class="row">
+      <div class="col welcome-message">
+        Hey, {{userName}}!
+      </div>
+    </div>
+    <div class="row">
+      <div class="col sub-title">
+        Enjoy your chatting
+      </div>
+    </div>
+  </div>
+
+  <app-chat [messages]="messages" (messageSent)="messageReceived($event)"></app-chat>
+</div>
+

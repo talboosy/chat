@@ -1,0 +1,31 @@
+        <div class="card p-3 rounded-3 text-black" style="background-color: #f0f0f0">
+          <div class="row g-0">
+            <div class="col-lg-12">
+              <div class="card-body p-md-5 mx-md-4">
+                <div class="text-center">
+                  <h4 class="mt-1 mb-5 pb-1" style="color: #0d6efd">LOGIN</h4>
+                </div>
+
+                <form class="text-center" (submit)="onSubmit()">
+                  <p>Please enter your user name</p>
+
+                  <div class="form-outline mb-4">
+                    <input type="text" class="form-control input" [(ngModel)]="username" name="username" required
+                           placeholder="User name" />
+                  </div>
+                  <div class="pb-2" *ngIf="error" style="color: red">{{ error }}</div>
+
+                  <button type="submit" class="text-center btn btn-primary">Sign In</button>
+
+
+<!--                  <div class="d-flex align-items-center justify-content-center pb-4">-->
+<!--                    <p class="mb-0 me-2">Don't have an account?</p>-->
+<!--                    <button type="button" class="btn btn-outline-danger">Create new</button>-->
+<!--                  </div>-->
+
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
